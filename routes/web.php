@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+route::group(['prefix' => 'admin'],function(){
+    
+    route::get('insert', function(){
+        return view('insert');
+    });
+});
